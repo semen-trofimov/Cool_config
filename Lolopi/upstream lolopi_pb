@@ -1,0 +1,4 @@
+upstream lolopi_pb {
+#               server 10.1.0.65:6061 weight=8 max_fails=2 fail_timeout=2s;             #procmon.cd.local
+                server 10.1.0.122:6061 weight=8 max_fails=2 fail_timeout=2s;    #p52n11.cd.local
+                server 10.1.0.65:6061 backup;
